@@ -1,0 +1,30 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer1.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer2.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer3.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer4.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/fetch.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux2.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux3.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux4.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v}
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v}
+
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1 {C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/test.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  test
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,309 @@
+Analysis & Elaboration report for Fase1
+Mon May 11 15:14:41 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "Alu:alu1"
+  6. Port Connectivity Checks: "uc_alu:uc"
+  7. Port Connectivity Checks: "buffer1:b1"
+  8. Analysis & Elaboration Messages
+  9. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon May 11 15:14:41 2020       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; Fase1                                       ;
+; Top-level Entity Name         ; A10                                         ;
+; Family                        ; MAX V                                       ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; A10                ; Fase1              ;
+; Family name                                                      ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Alu:alu1"                                                                                                                                                                        ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                          ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sel  ; Input  ; Warning  ; Input port expression (6 bits) is wider than the input port (4 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; zero ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uc_alu:uc"                                                                                                                                                            ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sel  ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (6 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffer1:b1"                                                                                  ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; b1_out[10..6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon May 11 15:14:32 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Fase1 -c Fase1 --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: Alu File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file a10.v
+    Info (12023): Found entity 1: A10 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file banco.v
+    Info (12023): Found entity 1: banco File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buffer1.v
+    Info (12023): Found entity 1: buffer1 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buffer2.v
+    Info (12023): Found entity 1: buffer2 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buffer3.v
+    Info (12023): Found entity 1: buffer3 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buffer4.v
+    Info (12023): Found entity 1: buffer4 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fetch.v
+    Info (12023): Found entity 1: fetch File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/fetch.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memin.v
+    Info (12023): Found entity 1: memIn File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
+    Info (12023): Found entity 1: mux2 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux3.v
+    Info (12023): Found entity 1: mux3 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.v
+    Info (12023): Found entity 1: mux4 File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uc.v
+    Info (12023): Found entity 1: uc File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uc_alu.v
+    Info (12023): Found entity 1: uc_alu File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test.v
+    Info (12023): Found entity 1: test File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/test.v Line: 2
+Info (12127): Elaborating entity "A10" for the top level hierarchy
+Info (12128): Elaborating entity "fetch" for hierarchy "fetch:f1" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 35
+Warning (10230): Verilog HDL assignment warning at fetch.v(9): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/fetch.v Line: 9
+Info (12128): Elaborating entity "memIn" for hierarchy "memIn:m1" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 41
+Warning (10855): Verilog HDL warning at memIn.v(9): initial value for variable mem should be constant File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v Line: 9
+Warning (10030): Net "mem" at memIn.v(6) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v Line: 6
+Info (12128): Elaborating entity "buffer1" for hierarchy "buffer1:b1" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 48
+Info (12128): Elaborating entity "banco" for hierarchy "banco:bank" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 59
+Warning (10850): Verilog HDL warning at banco.v(13): number of words (16) in memory file does not match the number of elements in the address range [0:31] File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v Line: 13
+Warning (10270): Verilog HDL Case Statement warning at banco.v(18): incomplete case statement has no default case item File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v Line: 18
+Info (12128): Elaborating entity "uc" for hierarchy "uc:control" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 69
+Warning (10240): Verilog HDL Always Construct warning at uc.v(10): inferring latch(es) for variable "regdst", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Warning (10240): Verilog HDL Always Construct warning at uc.v(10): inferring latch(es) for variable "regwrite", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Warning (10240): Verilog HDL Always Construct warning at uc.v(10): inferring latch(es) for variable "memtoreg", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Warning (10240): Verilog HDL Always Construct warning at uc.v(10): inferring latch(es) for variable "alusrc", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Info (10041): Inferred latch for "alusrc" at uc.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Info (10041): Inferred latch for "memtoreg" at uc.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Info (10041): Inferred latch for "regwrite" at uc.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Info (10041): Inferred latch for "regdst" at uc.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v Line: 10
+Info (12128): Elaborating entity "buffer2" for hierarchy "buffer2:b2" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 93
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:m2" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 100
+Info (12128): Elaborating entity "uc_alu" for hierarchy "uc_alu:uc" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 107
+Warning (10240): Verilog HDL Always Construct warning at uc_alu.v(10): inferring latch(es) for variable "sel", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v Line: 10
+Info (10041): Inferred latch for "sel[0]" at uc_alu.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v Line: 10
+Info (10041): Inferred latch for "sel[1]" at uc_alu.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v Line: 10
+Info (10041): Inferred latch for "sel[2]" at uc_alu.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v Line: 10
+Info (10041): Inferred latch for "sel[3]" at uc_alu.v(10) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v Line: 10
+Info (12128): Elaborating entity "mux3" for hierarchy "mux3:m3" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 114
+Info (12128): Elaborating entity "Alu" for hierarchy "Alu:alu1" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 122
+Warning (10270): Verilog HDL Case Statement warning at Alu.v(11): incomplete case statement has no default case item File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Warning (10240): Verilog HDL Always Construct warning at Alu.v(11): inferring latch(es) for variable "res", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[0]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[1]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[2]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[3]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[4]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[5]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[6]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[7]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[8]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[9]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[10]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[11]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[12]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[13]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[14]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[15]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[16]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[17]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[18]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[19]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[20]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[21]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[22]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[23]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[24]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[25]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[26]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[27]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[28]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[29]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[30]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (10041): Inferred latch for "res[31]" at Alu.v(11) File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v Line: 11
+Info (12128): Elaborating entity "buffer3" for hierarchy "buffer3:b3" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 135
+Info (12128): Elaborating entity "buffer4" for hierarchy "buffer4:b4" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 149
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:m4" File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 156
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uc_alu[5]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+    Warning (12110): Net "uc_alu[4]" is missing source, defaulting to GND File: C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v Line: 12
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/output_files/Fase1.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Mon May 11 15:14:41 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/output_files/Fase1.map.smsg.
+
+

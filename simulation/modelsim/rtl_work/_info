@@ -1,0 +1,343 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/simulation/modelsim
+vA10
+Z1 !s110 1589228090
+!i10b 1
+!s100 _:j8Gg<znc6D6L^mLMjlm0
+IOeL0She>XT7l@i;:U6cie1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1589180677
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1589228090.000000
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/A10.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1
+Z7 tCvgOpt 0
+n@a10
+vAlu
+R1
+!i10b 1
+!s100 IR[NBn>k;3GYd[U1iVoN<1
+IEJD9E_RadoCEl`LmC8hZk1
+R2
+R0
+w1589180667
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/Alu.v|
+!i113 1
+R5
+R6
+R7
+n@alu
+vbanco
+Z8 !s110 1589228091
+!i10b 1
+!s100 ^;5B:b9_ZOMQWJF8Ne?zz1
+IAHIFz]a?Q??WIg9l;cl@L2
+R2
+R0
+w1589215712
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1589228091.000000
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/banco.v|
+!i113 1
+R5
+R6
+R7
+vbuffer1
+R1
+!i10b 1
+!s100 RhW_:l]`9ML>F]id>[Yc03
+Ik]g3JnU7JBFeQl5BkCdgG2
+R2
+R0
+w1589181039
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer1.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer1.v|
+!i113 1
+R5
+R6
+R7
+vbuffer2
+R1
+!i10b 1
+!s100 =gE`T[z8kEoW9C6]4QEdc0
+Ic_z1NZ<CDo@zFY67A<Zl[1
+R2
+R0
+w1589181049
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer2.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer2.v|
+!i113 1
+R5
+R6
+R7
+vbuffer3
+R1
+!i10b 1
+!s100 972iVKa@<IPB;[JU2j<>W2
+IZPj9DzQE?JbWPn@9;k9T^3
+R2
+R0
+w1589181060
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer3.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer3.v|
+!i113 1
+R5
+R6
+R7
+vbuffer4
+R1
+!i10b 1
+!s100 h`<S6FmY=[_Dc8fHK[dH^1
+Ii@6P<fVV4HlIoUi4inWzz0
+R2
+R0
+w1589181079
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer4.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/buffer4.v|
+!i113 1
+R5
+R6
+R7
+vfetch
+R1
+!i10b 1
+!s100 >_>JY6`d9U2[K]O[i`hV@2
+Ii>8hYCo1LjD6mm<LH5HUQ1
+R2
+R0
+w1589181090
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/fetch.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/fetch.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/fetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/fetch.v|
+!i113 1
+R5
+R6
+R7
+vmemIn
+R8
+!i10b 1
+!s100 ;H_<?JO=2Qza;imKSR=jL3
+I`H=cMRAgn@mN2?<VDN[hR3
+R2
+R0
+w1589215711
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/memIn.v|
+!i113 1
+R5
+R6
+R7
+nmem@in
+vmux2
+R1
+!i10b 1
+!s100 MJKcoIWmTMBd;f^ZRLc4a0
+I:L;F=?C?Q<YFW2`6=7ocN3
+R2
+R0
+w1589181117
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux2.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux2.v|
+!i113 1
+R5
+R6
+R7
+vmux3
+R8
+!i10b 1
+!s100 z4okQ]kEj^onPGJOZCo8j0
+IJkQa<zNicGEh[C`?=fX4h3
+R2
+R0
+w1589181133
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux3.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux3.v|
+!i113 1
+R5
+R6
+R7
+vmux4
+R8
+!i10b 1
+!s100 _^B:DUAcD`FI5en_?hI`]1
+Ih;kA=XGJ`H>i>Xn8;H^ih3
+R2
+R0
+w1589181192
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux4.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/mux4.v|
+!i113 1
+R5
+R6
+R7
+vtest
+R8
+!i10b 1
+!s100 k93o1O<]S3m5fS@_h0H972
+IMTfO8PA6Yj_kYGN:bo]=z1
+R2
+R0
+w1589215543
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/test.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/test.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/test.v|
+!i113 1
+R5
+R6
+R7
+vuc
+R8
+!i10b 1
+!s100 X1i:E`4i`Q>=[`G^;KEI`2
+I_PBYSiN?3CCN8A[9o^gc]1
+R2
+R0
+w1589181210
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc.v|
+!i113 1
+R5
+R6
+R7
+vuc_alu
+R8
+!i10b 1
+!s100 26mFdCoRNmh:04TR8TQKG2
+In>:ocCi<T?gchF2zoYjz61
+R2
+R0
+w1589181225
+8C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v
+FC:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1|C:/intelFPGA_lite/18.1/proyectos/ProyectoFinal/Fases/Fase1/uc_alu.v|
+!i113 1
+R5
+R6
+R7
