@@ -1,5 +1,5 @@
 Flow report for Fase1
-Mon May 11 15:14:41 2020
+Tue May 19 03:45:43 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Mon May 11 15:14:41 2020       ;
+; Flow Status           ; Successful - Tue May 19 03:45:43 2020       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; Fase1                                       ;
-; Top-level Entity Name ; A10                                         ;
+; Top-level Entity Name ; test                                        ;
 ; Family                ; MAX V                                       ;
 +-----------------------+---------------------------------------------+
 
@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/11/2020 15:14:33 ;
+; Start date & time ; 05/19/2020 03:45:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Fase1               ;
 +-------------------+---------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 134660530755535.158922807303468 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 134660530755535.158987793202852 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; test           ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test                            ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; test                            ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                            ; --            ; --          ; eda_simulation ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                    ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; A10                             ; Fase1         ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; test                            ; Fase1         ; --          ; --             ;
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
@@ -84,8 +84,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4704 MB             ; 00:00:19                           ;
-; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Elaboration ; 00:00:12     ; 1.0                     ; 4708 MB             ; 00:00:25                           ;
+; Total                  ; 00:00:12     ; --                      ; --                  ; 00:00:25                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

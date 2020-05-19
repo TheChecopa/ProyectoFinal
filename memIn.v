@@ -3,11 +3,11 @@ input [7:0] ar,
 output reg [31:0] out
 );
 
-reg [7:0]mem[0:128];
+reg [7:0]mem[0:127];
 
 initial
 begin
-	 $readmemb("C:\\intelFPGA_lite\\18.1\\proyectos\\ProyectoFinal\\Fases\\Fase1\\mem.txt",mem,0,23);
+	 $readmemb("C:\\intelFPGA_lite\\18.1\\proyectos\\ProyectoFinal\\TestF2.txt",mem,0,127);
 end
 
 always@*

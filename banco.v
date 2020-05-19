@@ -8,11 +8,12 @@ module banco
 );
 
 reg [31:0] m [0:31];
-	
-initial begin
-	$readmemb("C:\\intelFPGA_lite\\18.1\\proyectos\\ProyectoFinal\\Fases\\Fase1\\datos.txt",m,0,31);
+
+initial
+  begin
+		  $readmemb("C:\\intelFPGA_lite\\18.1\\proyectos\\ProyectoFinal\\datos.txt",m,0,31);
 end	
-	
+
 always @(*)
 begin
 	case (en)
@@ -23,5 +24,5 @@ begin
 	endcase
 		DR1 = m[AR1];
 		DR2 = m[AR2];
-end
+end	
 endmodule 

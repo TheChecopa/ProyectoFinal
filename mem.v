@@ -5,7 +5,7 @@ module mem
 	output reg [31:0] salida
 );
 
-reg [31:0] datos [0:128];
+reg [31:0] datos [0:127];
 
 always @(*)
 begin

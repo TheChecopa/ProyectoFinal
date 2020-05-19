@@ -1,6 +1,6 @@
 module mux3
 (
-	input [31:0]rd2,
+	input [31:0]rd2, sign,
 	input alusrc,
 	output reg[31:0]smux3
 );
@@ -11,9 +11,9 @@ begin
 		begin
 			smux3 <= rd2;
 		end
-	default:
+		1'b1:
 		begin
-			smux3 <= 32'dx;
+			smux3 <= sign;
 		end
 	endcase
 end

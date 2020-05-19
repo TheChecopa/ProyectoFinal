@@ -1,6 +1,6 @@
 module mux4
 (
-	input [31:0] alu,
+	input [31:0] alu, mem,
 	input memtoreg, 
 	output reg [31:0] smux4
 );
@@ -12,9 +12,9 @@ begin
 			begin
 				smux4 <= alu;
 			end
-		default:
+		1'b1:
 			begin
-				smux4 <= 32'dx;
+			 smux4 <= mem;
 			end
 	endcase
 end

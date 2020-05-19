@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY A10
+set_global_assignment -name TOP_LEVEL_ENTITY test
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:02:57  MAY 11, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -67,3 +67,11 @@ set_global_assignment -name EDA_TEST_BENCH_NAME test -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test -section_id test
 set_global_assignment -name EDA_TEST_BENCH_FILE test.v -section_id test
+set_global_assignment -name VERILOG_FILE add2.v
+set_global_assignment -name VERILOG_FILE add1.v
+set_global_assignment -name VERILOG_FILE branch.v
+set_global_assignment -name VERILOG_FILE mem.v
+set_global_assignment -name VERILOG_FILE sign.v
+set_global_assignment -name VERILOG_FILE shift1.v
+set_global_assignment -name VERILOG_FILE pc.v
+set_global_assignment -name VERILOG_FILE mux1.v
