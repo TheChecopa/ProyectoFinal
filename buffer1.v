@@ -13,4 +13,4 @@ begin
 	out_cuatro <= cuatro;
 end
 
-endmodule
+endmodule 
