@@ -8,11 +8,10 @@ module banco
 );
 
 reg [31:0] m [0:31];
-
 initial
-  begin
-		  $readmemb("C:\\intelFPGA_lite\\18.1\\proyectos\\ProyectoFinal\\datos.txt",m,0,31);
-end	
+begin
+	$readmemb("C:\\Users\\Default.DESKTOP-8GME6EK\\Documents\\Seminario de arquitectura\\A10\\datos.txt",duv.bank.m,0,31);
+end
 
 always @(*)
 begin
