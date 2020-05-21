@@ -1,9 +1,9 @@
 module buffer4
 (
-	input clk, regwrite, memtoreg, 
+	input clk, regwrite, memtoreg, flag,
 	input [31:0] res, dato,
 	input [4:0] AW,
-	output reg out_regwrite, out_memtoreg,
+	output reg out_regwrite, out_memtoreg, out_flag,
 	output reg [31:0] salida, dato_out,
 	output reg [4:0] out_AW,
 	output reg [31:0] res_out
@@ -17,6 +17,7 @@ begin
 	out_regwrite <= regwrite;
 	out_memtoreg <= memtoreg;
 	dato_out <= dato;
+	out_flag <= flag;
 end 
 
 endmodule 
