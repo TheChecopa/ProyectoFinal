@@ -1,7 +1,7 @@
 module uc
 (
 	input [5:0] opcode,
-	output reg regdst, regwrite, memtoreg, alusrc, er, ew, PCSrc,
+	output reg regdst, regwrite, memtoreg, alusrc, er, ew, PCSrc, jump,
 	output reg [2:0] aluop
 );
 
@@ -19,6 +19,7 @@ begin
 				er <=  1'b0;
 				ew <= 1'b0;
 				PCSrc <= 1'b0;
+				jump <= 1'b0;
 			end
 	//lw
 		6'b100011:
@@ -31,6 +32,7 @@ begin
 				er <=  1'b1;
 				ew <= 1'b0;
 				PCSrc <= 1'b0;
+				jump <= 1'b0;
 			end
 	//sw
 		6'b101011:
@@ -43,11 +45,12 @@ begin
 				 er <=  1'b0;
 				 ew <= 1'b1;
 				 PCSrc <= 1'b0;
+				 jump <= 1'b0;
 			end
 	 //beq
 		6'b000100:
 			begin
-				aluop <= 3'b001;
+				 aluop <= 3'b001;
 				 regdst <= 1'bx;
 				 regwrite <= 1'b0;
 				 memtoreg <= 1'bx;
@@ -55,6 +58,7 @@ begin
 				 er <=  1'b0;
 				 ew <= 1'b0;
 				 PCSrc <= 1'b1;
+				 jump <= 1'b0;
 			end
 	 //addi
 		6'b001000:
@@ -67,6 +71,7 @@ begin
 				 er <=  1'b0;
 				 ew <= 1'b0;
 				 PCSrc <= 1'b0;
+				 jump <= 1'b0;
 			end
 		//andi
 		 6'b001100:
@@ -79,6 +84,7 @@ begin
 				 er <=  1'b0;
 				 ew <= 1'b0;
 				 PCSrc <= 1'b0;
+				 jump <= 1'b0;
 			end
 	   //ori
 		 6'b001101:
@@ -91,6 +97,7 @@ begin
 				 er <=  1'b0;
 				 ew <= 1'b0;
 				 PCSrc <= 1'b0;
+				 jump <= 1'b0;
 			end
 		//stli
 		6'b001010:
@@ -103,7 +110,21 @@ begin
 				 er <=  1'b0;
 				 ew <= 1'b0;
 				 PCSrc <= 1'b0;
+				 jump <= 1'b0;
+			end
+		//jump
+		6'b000010:
+			begin
+				 aluop <= 3'dx;
+				 regdst <= 1'bx;
+				 regwrite <= 1'bx;
+				 memtoreg <= 1'bx;
+				 alusrc <= 1'bx;
+				 er <=  1'bx;
+				 ew <= 1'bx;
+				 PCSrc <= 1'b0;
+				 jump <= 1'b1;
 			end
 	endcase
 end
-endmodule 
+endmodule 	
