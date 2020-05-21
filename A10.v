@@ -1,10 +1,11 @@
 module A10
 (
 	input clk,
-	output [31:0] salida
+	output [31:0] salida,
+	output flag
 );
 
-wire [31:0] pc_memIn;
+wire [31:0] pc_memIn, mux1_m5, mux5_pc, con_b2, con_b3, b3_mux5;
 wire [31:0] mux1_pc, add_mux, b1_cuatro, b2_cuatro, b3_mux1 ,add2_b3;
 wire [31:0] memIn_b1;
 wire [31:0] b1_br;
@@ -21,29 +22,40 @@ wire [4:0] b3_aw;
 wire [2:0] uc_aluop;
 wire [2:0] b2_aluop;
 wire [4:0] mux2_b3;
-wire uc_regdst, uc_memtoreg, uc_alusrc, uc_regwrite, uc_er, uc_ew, uc_pcsrc;
+wire uc_regdst, uc_memtoreg, uc_alusrc, uc_regwrite, uc_er, uc_ew, uc_pcsrc, uc_jump;
 wire b2_regdst, b2_regwrite, b2_memtoreg, b2_alusrc, b2_er, b2_ew, b2_pcsrc;
-wire b3_regwrite, b3_memtoreg, b3_er, b3_ew, b3_pcsrc, zero_b3, b3_zero, pcsrc_mux1;
+wire b3_regwrite, b3_memtoreg, b3_er, b3_ew, b3_pcsrc, zero_b3, b3_zero, pcsrc_mux1, jump_b3, b3_jump;
 wire [4:0] b4_aw;
 wire b4_regwrite, b4_memtoreg;
 wire [31:0] b4_mux;
 wire [31:0] m4_br, m3_b;
 wire [4:0] Inm_b2;
 wire [31:0] sign_b2, b2_mux3, b3_dw, mem_b4, dato_m4;
+wire flag_b3, b3_flag;
 wire [31:0] add2_shift;
+wire [27:0] sh2_b2;
+
+
+mux5 m5
+(
+	.mux1(mux1_m5),
+	.shift2(b3_mux5),
+	.jump(b3_jump),
+	.smux5(mux5_pc)
+);
 
 mux1 m1
 (
 	.pcsrc(pcsrc_mux1),
 	.add1(add_mux),
 	.add2(b3_mux1),
-	.smux1(mux1_pc)
+	.smux1(mux1_m5)
 );
 
 pc pc0
 (
 	.clk(clk),
-	.add(mux1_pc),
+	.add(mux5_pc),
 	.salida(pc_memIn)
 );
 
@@ -68,6 +80,20 @@ buffer1 b1
 	.b1_out(b1_br)
 );
 
+shift2 left2
+(
+	.in_shift(b1_br[25:0]),
+	.out_shift(sh2_con)
+);
+
+concatenacion con
+(
+	.sh2(sh2_con),
+	.cuatro(b1_cuatro),
+	.salida(con_b2)
+);
+
+
 banco bank
 (
 	.AW(b4_aw),
@@ -89,7 +115,8 @@ uc control
 	.alusrc (uc_alusrc),
 	.er(uc_er),
 	.ew(uc_ew),
-	.PCSrc(uc_pcsrc)
+	.PCSrc(uc_pcsrc),
+	.jump(uc_jump)
 );
 
 sign extend
@@ -115,6 +142,8 @@ buffer2 b2
 	.sign(sign_b2),
 	.pcsrc(uc_pcsrc),
 	.cuatro(b1_cuatro),
+	.con(con_b2),
+	.out_con(con_b3),
 	.out_cuatro(b2_cuatro), 
 	.out_pcsrc(b2_pcsrc),
 	.sign_out(b2_mux3),
@@ -131,7 +160,9 @@ buffer2 b2
 	.dr1_out(b2_a),
 	.dr2_out(b2_b),
 	.sel_out(b2_sel),
-	.out_AW(b2_aw)
+	.out_AW(b2_aw),
+	.jump(uc_jump),
+	.out_jump(jump_b3)
 );
 
 mux2 m2
@@ -175,7 +206,8 @@ Alu alu1
 	.B(m3_b),
 	.sel(uc_alu),
 	.res(alu_b3),
-	.zero(zero_b3)
+	.zero(zero_b3),
+	.flag(flag_b3)
 );
 
 buffer3 b3
@@ -200,7 +232,13 @@ buffer3 b3
 	.er(b2_er),
 	.ew(b2_ew),
 	.out_ew(b3_ew),
-	.out_er(b3_er)
+	.out_er(b3_er),
+	.flag(flag_b3),
+	.out_flag(b3_flag),
+	.con(con_b3),
+	.out_con(b3_mux5),
+	.jump(jump_b3),
+	.out_jump(b3_jump)
 );
 
 branch and1
@@ -227,6 +265,8 @@ buffer4 b4
 	.memtoreg(b3_memtoreg),
 	.out_memtoreg(b4_memtoreg),
 	.salida(salida),
+	.flag(b3_flag),
+	.out_flag(flag),
 	.res_out(b4_mux),
 	.AW(b3_aw),
 	.out_regwrite(b4_regwrite),
@@ -243,4 +283,4 @@ mux4 m4
 	.smux4(m4_br)
 );
 
-endmodule
+endmodule 
