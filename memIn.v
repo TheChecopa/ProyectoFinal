@@ -1,18 +1,35 @@
 module memIn
 (
-	input [31:0] ar,
-	output reg [31:0] out
+input clk,
+input [31:0] dir,
+output reg [31:0] out,
+output reg [31:0] Fetch, prueba,
+output  [31:0] Sal, Instruccion
 );
 
-reg [7:0]mem[0:128];
+reg[6:0] pc;
+reg [7:0]mem[0:526];
 
 initial
 begin
-	 $readmemb("C:\\Users\\Default.DESKTOP-8GME6EK\\Documents\\Seminario de arquitectura\\A10\\archivo.txt",mem,0,7);
+	 pc = - 7'd4;
 end
 
-always@*
+always@(posedge clk)
 begin
-	out = {mem[ar],mem[ar+1],mem[ar+2],mem[ar+3]};
+	pc = pc+7'd4;
+	out=pc;
+	prueba=dir;
+	Fetch=pc;
 end
+
+initial
+begin
+	 $readmemb("C:\\Users\\Default.DESKTOP-8GME6EK\\Documents\\Seminario de arquitectura\\A10\\archivo.txt",mem,0,27);
+end
+
+assign Sal = {mem[dir], mem[dir+1], mem[dir+2], mem[dir+3]};
+assign Instruccion = {mem[dir], mem[dir+1], mem[dir+2], mem[dir+3]};
+
+
 endmodule 
